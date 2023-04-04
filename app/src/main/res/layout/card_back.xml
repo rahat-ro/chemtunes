@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/border_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/c_back_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/chemtunes_logo"/>
+
+        <TextView
+            android:id="@+id/c_back_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

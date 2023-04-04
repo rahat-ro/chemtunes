@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.PaymentActivity">
+
+
+    <LinearLayout
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/border_two"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Package name: "
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/package_name"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Course duration: "
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/month_limit"
+                        android:textColor="@color/black"
+                        android:gravity="right"
+                        android:textSize="18dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Months "
+                        android:textColor="@color/black"
+                        android:gravity="right"
+                        android:textSize="18dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/border_two"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="@string/pay_three"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="2dp"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/pay_four"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="18dp"
+                    android:layout_margin="2dp"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/border_two"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Bkash/Rokect number "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        app:hintEnabled="true"
+                        android:hint="number"
+                        app:hintTextColor="@color/colorPrimary"
+                        app:startIconCheckable="true"
+                        app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                        app:counterMaxLength="13"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/p_mob_banking_no"
+                            android:textSize="18dp"
+                            android:inputType="phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="TrxID"
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        app:hintEnabled="true"
+                        android:hint="TrxID"
+                        app:hintTextColor="@color/colorPrimary"
+                        app:startIconCheckable="true"
+                        app:startIconDrawable="@drawable/ic_baseline_info_24"
+                        app:counterMaxLength="50"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/p_trans_id"
+                            android:textSize="18dp"
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginTop="16dp"
+
+                    android:id="@+id/btnPayment"
+                    android:text="Payment"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:backgroundTint="@color/red"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/border_two"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_name"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Phone Number : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_phone_number"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Collage Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_collage_name"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Subscription Fee : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_subscription_fee"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Date : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_date"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Time : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_time"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Amount : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/p_amount"
+                        android:text="Name : "
+                        android:textSize="18dp"
+                        android:padding="4dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pak_title"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pak_fee"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/pak_duration"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/pak_s_dis"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:id="@+id/pak_dis"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pak_icon"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"/>
+
+                <Button
+                    android:text="Subscribe"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnSubscribe"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

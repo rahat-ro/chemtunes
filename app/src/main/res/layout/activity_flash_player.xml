@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="flipCard"
+    tools:context=".flashcard.FlashPlayerActivity">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="256dp">
+
+        <FrameLayout
+
+            android:id="@+id/card_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/card_back" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/card_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <include layout="@layout/card_font" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ff_rv"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

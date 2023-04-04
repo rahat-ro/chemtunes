@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".registration.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="64dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Account info"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_name"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Phone number"
+                    android:textSize="18dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_ph_no"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Collage Name"
+                    android:textSize="18dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_collage_name"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="HSC Exam Year"
+                    android:textSize="18dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_hsc"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Account Type"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_account_type"
+                    android:text="Get Premium Account"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/red"
+                android:id="@+id/up_info"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:padding="2dp"
+                android:layout_margin="4dp"
+                android:text="update your account to premium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Subscription Fee"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_subscription_fee"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/red"
+                android:id="@+id/up_info_s"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:padding="2dp"
+                android:layout_margin="4dp"
+                android:text="pay your subscription fee for premium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Package name "
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_package_name"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Monthly Limit"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/view_limit"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/update_profile"
+                android:text="update profile"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <TextView
+                android:textSize="20dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:id="@+id/payment_history"
+                android:text="Payment History"
+                android:gravity="left"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:text="Sign Out"
+                android:id="@+id/logOut"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

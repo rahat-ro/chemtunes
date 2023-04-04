@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/slider_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    app:tabBackground="@drawable/slider_dot_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="@drawable/gradient"
+                android:layout_width="3dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+
+                android:text= "নোটিস"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="4dp"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chem_notice_rv"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="@drawable/gradient"
+                android:layout_width="3dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:id="@+id/course"
+                android:text= "কোর্স আউটলাইন"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="4dp"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chem_course_rv"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="@drawable/gradient"
+                android:layout_width="3dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:text="সাবস্ক্রিপসন প্যাকেজ"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="4dp"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chem_package_rv"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

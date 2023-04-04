@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/end_layer"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebeff2" />
+
+        <LinearLayout
+            android:layout_below="@id/youtube_player_view"
+            android:id="@+id/video_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="8">
+            <SeekBar
+                android:progressTint="@color/white"
+                android:progressBackgroundTint="@color/white"
+                android:thumb="@drawable/ic_baseline_adjust_24"
+                android:id="@+id/video_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="7"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/play_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="--:--"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_aspect_ratio_24" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/video_lecture_rvv"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
